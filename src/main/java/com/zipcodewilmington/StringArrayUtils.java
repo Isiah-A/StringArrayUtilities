@@ -1,6 +1,7 @@
 package com.zipcodewilmington;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * Created by leon on 1/29/18.
@@ -47,9 +48,11 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean contains(String[] array, String value) {
         for(int i = 0; i < array.length; i++){
-
+        if (Objects.equals(array[i], value)) {
+            return true;
         }
-        return true;
+        }
+        return false;
     }
 
     /**
@@ -70,6 +73,8 @@ public class StringArrayUtils {
      * @return true if the order of the array is the same backwards and forwards
      */ // TODO
     public static boolean isPalindromic(String[] array) {
+        for(int i = 0; i < array.length / 2; i++){
+       }
         return false;
     }
 
